@@ -1,5 +1,5 @@
 About Version Control
-What is ìversion controlî, and why should you care? Version control is a system that records
+What is ‚Äúversion control‚Äù, and why should you care? Version control is a system that records
 changes to a file or set of files over time so that you can recall specific versions later. For the
 examples in this book, you will use software source code as the files being version controlled,
 though in reality you can do this with nearly any type of file on a computer.
@@ -11,10 +11,10 @@ a problem, who introduced an issue and when, and more. Using a VCS also generall
 you screw things up or lose files, you can easily recover. In addition, you get all this for very little
 overhead.
 Local Version Control Systems
-Many peopleís version-control method of choice is to copy files into another directory (perhaps a
-time-stamped directory, if theyíre clever). This approach is very common because it is so simple, but
-it is also incredibly error prone. It is easy to forget which directory youíre in and accidentally write
-to the wrong file or copy over files you donít mean to.
+Many people‚Äôs version-control method of choice is to copy files into another directory (perhaps a
+time-stamped directory, if they‚Äôre clever). This approach is very common because it is so simple, but
+it is also incredibly error prone. It is easy to forget which directory you‚Äôre in and accidentally write
+to the wrong file or copy over files you don‚Äôt mean to.
 To deal with this issue, programmers long ago developed local VCSs that had a simple database that
 kept all the changes to files under revision control.
 5
@@ -33,19 +33,19 @@ many years, this has been the standard for version control.
 Figure 2. Centralized version control.
 This setup offers many advantages, especially over local VCSs. For example, everyone knows to a
 certain degree what everyone else on the project is doing. Administrators have fine-grained control
-over who can do what, and itís far easier to administer a CVCS than it is to deal with local databases
+over who can do what, and it‚Äôs far easier to administer a CVCS than it is to deal with local databases
 on every client.
 However, this setup also has some serious downsides. The most obvious is the single point of failure
 that the centralized server represents. If that server goes down for an hour, then during that hour
-nobody can collaborate at all or save versioned changes to anything theyíre working on. If the hard
-disk the central database is on becomes corrupted, and proper backups havenít been kept, you lose
-absolutely everything ó the entire history of the project except whatever single snapshots people
+nobody can collaborate at all or save versioned changes to anything they‚Äôre working on. If the hard
+disk the central database is on becomes corrupted, and proper backups haven‚Äôt been kept, you lose
+absolutely everything ‚Äî the entire history of the project except whatever single snapshots people
 happen to have on their local machines. Local VCS systems suffer from this same
-problem ó whenever you have the entire history of the project in a single place, you risk losing
+problem ‚Äî whenever you have the entire history of the project in a single place, you risk losing
 everything.
 Distributed Version Control Systems
 This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial,
-Bazaar or Darcs), clients donít just check out the latest snapshot of the files; rather, they fully
+Bazaar or Darcs), clients don‚Äôt just check out the latest snapshot of the files; rather, they fully
 mirror the repository, including its full history. Thus, if any server dies, and these systems were
 collaborating via that server, any of the client repositories can be copied back up to the server to
 restore it. Every clone is really a full backup of all the data.
@@ -54,4 +54,5 @@ Figure 3. Distributed version control.
 Furthermore, many of these systems deal pretty well with having several remote repositories they
 can work with, so you can collaborate with different groups of people in different ways
 simultaneously within the same project. This allows you to set up several types of workflows that
-arenít possible in centralized systems, such as hierarchical models.
+aren‚Äôt possible in centralized systems, such as hierarchical mode
+![](desktop/guc.jpg)
